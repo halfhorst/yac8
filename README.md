@@ -7,8 +7,8 @@ emulation.
 ## Dependencies
 
 This implementation uses SDL2 for rendering and input. Both Rust and SDL2 are
-cross-platform so the emulator should be as well. I won't cover SDL2
-installation here but you will need it available when you build the executable.
+cross-platform so the emulator should be as well. I won't cover SDL2 installation
+here but you will need it available when you build the executable.
 
 ## Building and Running
 
@@ -20,14 +20,14 @@ fire up the machine. You can also combine the build and run process using
 
 `yac8` supports variable clock frequencies (defaults to 700hz), verbose logging
 of instructions to the terminal, and a scan mode that parses and prints a
-program's instructions without executing. The executable supports `--help`,
-so check it out. The variable clock frequency is useful because Chip-8 doesn't
-actually specify a clock speed for instruction execution, only timer countdown
+program's instructions without executing. The  executable has `--help`, so check
+it out. The variable clock frequency is useful because Chip-8 doesn't actually
+specify a clock speed for instruction execution, only timer countdown
 rates (60hz). Programs work best with a variety of clock speeds.
 
-Programs are rendered to 10x the original resolution of 64 by 32. This is
-not currently configurable. Controls are mapped as below and are also not
-currently configurable.
+Note that `yac8` doesn't yet support sound.  Programs are rendered to 10x the
+original resolution of 64 by 32 and this is not currently configurable. Controls
+are mapped as below and are also not currently configurable.
 
     your keyboard    Chip-8 hexpad input
       1 2 3 4      |      1 2 3 C
