@@ -1,6 +1,6 @@
 # Yet Another CHIP-8 Virtual Machine and Interpreter.
 
-CHIP-8 both a simple interpreted programming language and a specification for
+CHIP-8 is both a simple interpreted programming language and a specification for
 a virtual machine. It's also a good place to start experimenting with
 emulation.
 
@@ -21,8 +21,9 @@ fire up the machine. You can also combine the build and run process using
 `yac8` supports variable clock frequencies (defaults to 700hz), verbose logging
 of instructions to the terminal, and a scan mode that parses and prints a
 program's instructions without executing. The executable supports `--help`,
-so check it out. The variable clock frequency is useful because Chip-8 doesn't actually specify a clock speed for instruction execution, only timer
-countdown rates (60hz). Programs work best with a variety of clock speeds.
+so check it out. The variable clock frequency is useful because Chip-8 doesn't
+actually specify a clock speed for instruction execution, only timer countdown
+rates (60hz). Programs work best with a variety of clock speeds.
 
 Programs are rendered to 10x the original resolution of 64 by 32. This is
 not currently configurable. Controls are mapped as below and are also not
